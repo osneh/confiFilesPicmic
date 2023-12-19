@@ -390,8 +390,8 @@ all_config = ['I2C_config_blue-213_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPR
 #3 LOAD_PICMIC_I2C_REG -add 41 -val 253
 #4 START_RUN -TIME 2 -SAVETO .\Run_Data
 
-line1 = '#1 LOAD_SETUP -FROM \\\lyonas2\group\picmic\config\Setup_8Dec23.dat'
-line2 = '#2 LOAD_PICMIC_CONFIG_FILE -FROM .\PICMIC_ConfigFiles\\'
+line1 = 'LOAD_SETUP -FROM \\\lyonas2\group\picmic\config\Setup_8Dec23.dat'
+line2 = 'LOAD_PICMIC_CONFIG_FILE -FROM .\PICMIC_ConfigFiles\\'
 line3 = 'LOAD_PICMIC_I2C_REG -add 39 -val '
 line4 = 'START_RUN -TIME 2 -SAVETO K:\Run_Data'
 
@@ -401,23 +401,36 @@ line4 = 'START_RUN -TIME 2 -SAVETO K:\Run_Data'
 #print(line3)
 #print(line4)
 
+
+vrefn_count = 3
+other_count = 4
+
+a_count=1
+b_count=2
+idx = 0
 for i in all_config :
-    print(line1)
-    print(line2+i)
-    vrefn_count = 3
-    other_count = 4
+    idx=idx+1
+    print('#'+str(idx)+' '+line1)
+    idx=idx+1
+    print('#'+str(idx)+' '+line2+i)
+
+
     s0 = i.split('_')
     stemp0 = s0[2]+'_'+s0[5]+s0[6]+'_'+s0[7]+s0[8]+'_'+s0[9]+s0[10]+'_'+s0[11]+s0[12]+'_'+s0[13]+s0[14][:-4]+'_'+s0[3]
     for ivrefn in range(0,251) :
-        #vrefn_count+=1 
+        idx+=1
+        ##print('#'+str(vrefn_count)+' '+line3+str(ivrefn))
+        print('#'+str(idx)+' '+line3+str(ivrefn))
+        idx+=1
+        print('#'+str(idx)+' '+line4+'\\'+stemp0+str(ivrefn))
+        ##print('#'+str(other_count)+' '+line4+'\\'+stemp0+str(ivrefn))
+        #vrefn_count+=2 
         #other_count = vrefn_count+1
-        #print(line1)
-        print('#'+str(vrefn_count)+' '+line3+str(ivrefn))
-        #print('#'+str(ivrefn+4)+' '+line4+str(ivrefn))
-        print('#'+str(other_count)+' '+line4+'\\'+stemp0+str(ivrefn))
-        vrefn_count+=2 
-        other_count = vrefn_count+1
-    print('#'+str(vrefn_count)+' STOP_RUN')
-    print('#'+str(other_count)+' STOP_SCRIPT')
-    print('')
+    idx+=1
+    print('#'+str(idx)+' STOP_RUN')
+    ##print('#'+str(vrefn_count)+' STOP_RUN')
+idx+=1
+print('#'+str(idx)+' STOP_SCRIPT')
+##print('#'+str(other_count)+' STOP_SCRIPT')
+#print('')
         ##print(line4)
