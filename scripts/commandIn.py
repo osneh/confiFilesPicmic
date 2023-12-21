@@ -393,7 +393,7 @@ all_config = ['I2C_config_blue-213_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPR
 line1 = 'LOAD_SETUP -FROM \\\lyonas2\group\picmic\config\Setup_8Dec23.dat'
 line2 = 'LOAD_PICMIC_CONFIG_FILE -FROM .\PICMIC_ConfigFiles\\'
 line3 = 'LOAD_PICMIC_I2C_REG -add 39 -val '
-line4 = 'START_RUN -TIME 2 -SAVETO K:\Run_Data'
+line4 = 'START_RUN -TIME 1 -SAVETO K:\Run_Data'
 
 #for i in all_config : 
 #print(line1)
