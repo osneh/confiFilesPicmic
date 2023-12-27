@@ -1,3 +1,4 @@
+'''
 all_config = ['I2C_config_blue-213_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_136.txt',
 'I2C_config_blue-213_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_137.txt',
 'I2C_config_blue-213_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_138.txt',
@@ -382,7 +383,116 @@ all_config = ['I2C_config_blue-213_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPR
 'I2C_config_yellow-852_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_189.txt',
 'I2C_config_yellow-852_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_190.txt',
 'I2C_config_yellow-852_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_191.txt']
+'''
 
+"""
+all_config=[
+'I2C_config_yellow-213_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_168.txt',
+'I2C_config_yellow-426_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_168.txt',
+'I2C_config_yellow-639_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_168.txt',
+'I2C_config_yellow-852_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_168.txt',
+'I2C_config_yellow-213_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_169.txt',
+'I2C_config_yellow-426_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_169.txt',
+'I2C_config_yellow-639_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_169.txt',
+'I2C_config_yellow-852_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_169.txt',
+'I2C_config_yellow-213_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_170.txt',
+'I2C_config_yellow-426_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_170.txt',
+'I2C_config_yellow-639_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_170.txt',
+'I2C_config_yellow-852_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_170.txt',
+'I2C_config_yellow-213_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_171.txt',
+'I2C_config_yellow-426_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_171.txt',
+'I2C_config_yellow-639_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_171.txt',
+'I2C_config_yellow-852_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_171.txt',
+'I2C_config_yellow-213_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_172.txt',
+'I2C_config_yellow-426_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_172.txt',
+'I2C_config_yellow-639_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_172.txt',
+'I2C_config_yellow-852_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_172.txt',
+'I2C_config_yellow-213_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_173.txt',
+'I2C_config_yellow-426_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_173.txt',
+'I2C_config_yellow-639_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_173.txt',
+'I2C_config_yellow-852_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_173.txt',
+'I2C_config_yellow-213_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_174.txt',
+'I2C_config_yellow-426_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_174.txt',
+'I2C_config_yellow-639_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_174.txt',
+'I2C_config_yellow-852_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_174.txt',
+'I2C_config_yellow-213_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_175.txt',
+'I2C_config_yellow-426_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_175.txt',
+'I2C_config_yellow-639_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_175.txt',
+'I2C_config_yellow-852_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_175.txt'
+]
+"""
+
+"""
+all_config = [
+'I2C_config_blue-213_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_168.txt',
+'I2C_config_blue-426_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_168.txt',
+'I2C_config_blue-639_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_168.txt',
+'I2C_config_blue-852_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_168.txt',
+'I2C_config_blue-213_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_169.txt',
+'I2C_config_blue-426_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_169.txt',
+'I2C_config_blue-639_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_169.txt',
+'I2C_config_blue-852_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_169.txt',
+'I2C_config_blue-213_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_170.txt',
+'I2C_config_blue-426_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_170.txt',
+'I2C_config_blue-639_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_170.txt',
+'I2C_config_blue-852_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_170.txt',
+'I2C_config_blue-213_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_171.txt',
+'I2C_config_blue-426_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_171.txt',
+'I2C_config_blue-639_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_171.txt',
+'I2C_config_blue-852_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_171.txt',
+'I2C_config_blue-213_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_172.txt',
+'I2C_config_blue-426_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_172.txt',
+'I2C_config_blue-639_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_172.txt',
+'I2C_config_blue-852_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_172.txt',
+'I2C_config_blue-213_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_173.txt',
+'I2C_config_blue-426_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_173.txt',
+'I2C_config_blue-639_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_173.txt',
+'I2C_config_blue-852_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_173.txt',
+'I2C_config_blue-213_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_174.txt',
+'I2C_config_blue-426_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_174.txt',
+'I2C_config_blue-639_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_174.txt',
+'I2C_config_blue-852_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_174.txt',
+'I2C_config_blue-213_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_175.txt',
+'I2C_config_blue-426_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_175.txt',
+'I2C_config_blue-639_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_175.txt',
+'I2C_config_blue-852_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_175.txt'
+]
+"""
+
+all_config = [
+'I2C_config_red-213_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_168.txt',
+'I2C_config_red-426_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_168.txt',
+'I2C_config_red-639_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_168.txt',
+'I2C_config_red-852_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_168.txt',
+'I2C_config_red-213_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_169.txt',
+'I2C_config_red-426_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_169.txt',
+'I2C_config_red-639_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_169.txt',
+'I2C_config_red-852_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_169.txt',
+'I2C_config_red-213_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_170.txt',
+'I2C_config_red-426_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_170.txt',
+'I2C_config_red-639_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_170.txt',
+'I2C_config_red-852_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_170.txt',
+'I2C_config_red-213_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_171.txt',
+'I2C_config_red-426_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_171.txt',
+'I2C_config_red-639_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_171.txt',
+'I2C_config_red-852_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_171.txt',
+'I2C_config_red-213_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_172.txt',
+'I2C_config_red-426_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_172.txt',
+'I2C_config_red-639_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_172.txt',
+'I2C_config_red-852_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_172.txt',
+'I2C_config_red-213_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_173.txt',
+'I2C_config_red-426_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_173.txt',
+'I2C_config_red-639_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_173.txt',
+'I2C_config_red-852_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_173.txt',
+'I2C_config_red-213_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_174.txt',
+'I2C_config_red-426_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_174.txt',
+'I2C_config_red-639_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_174.txt',
+'I2C_config_red-852_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_174.txt',
+'I2C_config_red-213_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_175.txt',
+'I2C_config_red-426_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_175.txt',
+'I2C_config_red-639_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_175.txt',
+'I2C_config_red-852_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPReg_175.txt'   
+]
 
 
 #1 LOAD_SETUP -FROM \\lyonas2\group\picmic\config\Setup_8Dec23.dat
@@ -393,7 +503,7 @@ all_config = ['I2C_config_blue-213_VRefN_0_VRefP_50_VBN_45_VBNadj_128_VBP_91_PPR
 line1 = 'LOAD_SETUP -FROM \\\lyonas2\group\picmic\config\Setup_8Dec23.dat'
 line2 = 'LOAD_PICMIC_CONFIG_FILE -FROM .\PICMIC_ConfigFiles\\'
 line3 = 'LOAD_PICMIC_I2C_REG -add 39 -val '
-line4 = 'START_RUN -TIME 1 -SAVETO K:\Run_Data'
+line4 = 'START_RUN -TIME 1 -SAVETO K:\Run_Data_Noel'
 
 #for i in all_config : 
 #print(line1)
