@@ -416,13 +416,25 @@ for i in all_config :
 
 
     s0 = i.split('_')
-    stemp0 = s0[2]+'_'+s0[5]+s0[6]+'_'+s0[7]+s0[8]+'_'+s0[9]+s0[10]+'_'+s0[11]+s0[12]+'_'+s0[13]+s0[14][:-4]+'_'+s0[3]
+    
+    ##for id, li in enumerate(s0):
+    ##    print(id,li)
+    
+    #stemp0 = s0[2]+'_'+s0[5]+s0[6]+'_'+s0[7]+s0[8]+'_'+s0[9]+s0[10]+'_'+s0[11]+s0[12]+'_'+s0[13]+s0[14][:-4]+'_'+s0[3]
+    stemp0 = s0[2]+'_'+s0[5]+s0[6]+'_'+s0[7]+s0[8]+'_'+s0[9]+s0[10]+'_'+s0[11]+s0[12]+'_'+s0[3]
+    #print('------------------')
+    ##print(stemp0)
+
+    ##+'_'+s0[13]+s0[14][:-4]
+
+    ##exit()
+
     for ivrefn in range(0,251) :
         idx+=1
         ##print('#'+str(vrefn_count)+' '+line3+str(ivrefn))
         print('#'+str(idx)+' '+line3+str(ivrefn))
         idx+=1
-        print('#'+str(idx)+' '+line4+'\\'+stemp0+str(ivrefn))
+        print('#'+str(idx)+' '+line4+'\\'+stemp0+str(ivrefn)+'_'+s0[13]+s0[14][:-4])
         ##print('#'+str(other_count)+' '+line4+'\\'+stemp0+str(ivrefn))
         #vrefn_count+=2 
         #other_count = vrefn_count+1
